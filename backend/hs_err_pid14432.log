@@ -1,0 +1,217 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_IN_PAGE_ERROR (0xc0000006) at pc=0x00007ffac90865c3, pid=14432, tid=12460
+#
+# JRE version:  (17.0.10+7) (build )
+# Java VM: OpenJDK 64-Bit Server VM (17.0.10+7, mixed mode, sharing, tiered, unknown gc, windows-amd64)
+# Problematic frame:
+# C  [ucrtbase.dll+0x265c3]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages 
+
+Host: AMD Ryzen 3 3100 4-Core Processor              , 8 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+Time: Mon May 20 14:00:10 2024 Malay Peninsula Standard Time elapsed time: 4.349073 seconds (0d 0h 0m 4s)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x00000011f9400000,0x00000011f9500000],  sp=0x00000011f94fe9e8,  free space=1018k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [ucrtbase.dll+0x265c3]
+V  [jvm.dll+0x42eaff]
+V  [jvm.dll+0x427f3c]
+V  [jvm.dll+0xb125a]
+V  [jvm.dll+0xb4785]
+V  [jvm.dll+0xb3a9d]
+V  [jvm.dll+0xb0ead]
+V  [jvm.dll+0x7e48ec]
+V  [jvm.dll+0x3eff3f]
+V  [jvm.dll+0x3f1b71]
+C  [jli.dll+0x528f]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17344]
+C  [ntdll.dll+0x526b1]
+
+
+siginfo: EXCEPTION_IN_PAGE_ERROR (0xc0000006), reading address 0x00007ffa4a100de8
+
+
+Registers:
+RAX=0x65646f43776f6853, RBX=0x00000000dcdca8be, RCX=0x00000011f94feab0, RDX=0x00007fe850c02338
+RSP=0x00000011f94fe9e8, RBP=0x0000000000000022, RSI=0x00007ffa4a2addb8, RDI=0x000000000000047e
+R8 =0x0000000000000022, R9 =0x00000011f94fead2, R10=0xfefefefefefefeff, R11=0x8080808080808080
+R12=0x0000000000000001, R13=0x000002062a4788c4, R14=0x00000011f94feab0, R15=0x00007ffa4a10bbc0
+RIP=0x00007ffac90865c3, EFLAGS=0x0000000000010287
+
+
+Top of Stack: (sp=0x00000011f94fe9e8)
+0x00000011f94fe9e8:   00007ffa49bbeaff 0000000000000001
+0x00000011f94fe9f8:   000002062a4788c4 00000011f94feb60
+0x00000011f94fea08:   00007ffa49845e6a 00000011f94ff300
+0x00000011f94fea18:   0000000000000001 00000011f94feb60
+0x00000011f94fea28:   00007ffa49bb7f3c 0000000000000000
+0x00000011f94fea38:   0000000000000000 0000000000000022
+0x00000011f94fea48:   000002062a4788c4 000002062a466701
+0x00000011f94fea58:   00007ffa4984125a 0000000000000022
+0x00000011f94fea68:   000002062a4788c4 000002062a4788c4
+0x00000011f94fea78:   000002062a466701 0000000000360038
+0x00000011f94fea88:   00000000000000f4 000002062a4892e0
+0x00000011f94fea98:   00007ffa4a023e14 00007ffa4a023e14
+0x00000011f94feaa8:   00000011f94feb90 65646f43776f6853
+0x00000011f94feab8:   49736c6961746544 697470656378456e
+0x00000011f94feac8:   67617373654d6e6f 000002062a007365
+0x00000011f94fead8:   00007ffac914f0b0 0000000000000040
+0x00000011f94feae8:   000002062a400cc0 0000000000000026
+0x00000011f94feaf8:   0000000000000002 0000000000000000
+0x00000011f94feb08:   0000000000000040 0000000000000030
+0x00000011f94feb18:   0000000000000010 000002062a460000
+0x00000011f94feb28:   00000011f94febe9 0000000000000004
+0x00000011f94feb38:   00007ffacb9db3c7 000002062a400000
+0x00000011f94feb48:   00007ffacb9d5ba1 0000000000000030
+0x00000011f94feb58:   0000000000000002 000002062a55d940
+0x00000011f94feb68:   0000000000000003 0000000200000000
+0x00000011f94feb78:   00007ffacb9ddf4c 000002062a4892a0
+0x00000011f94feb88:   0000000000000026 000002062a460000
+0x00000011f94feb98:   000002062a49f1c0 000002062a460320
+0x00000011f94feba8:   0000000000000003 000002062a400000
+0x00000011f94febb8:   00000000000008f8 00007ffac9060000
+0x00000011f94febc8:   000002062c62f500 0000000000000000
+0x00000011f94febd8:   0000000000000001 000002062a460000 
+
+Instructions: (pc=0x00007ffac90865c3)
+0x00007ffac90864c3:   4d 85 c0 75 05 44 88 11 eb c5 49 8b f9 44 38 11
+0x00007ffac90864d3:   74 09 48 ff c1 48 83 ea 01 75 f2 48 85 d2 75 05
+0x00007ffac90864e3:   45 88 13 eb aa 49 83 f9 ff 75 18 4c 2b c1 41 8a
+0x00007ffac90864f3:   04 08 88 01 48 ff c1 84 c0 74 30 48 83 ea 01 75
+0x00007ffac9086503:   ed eb 28 4d 85 c9 74 1b 41 8a 00 49 ff c0 88 01
+0x00007ffac9086513:   48 ff c1 84 c0 74 0c 48 83 ea 01 74 06 48 83 ef
+0x00007ffac9086523:   01 75 e5 48 85 ff 75 03 44 88 11 48 85 d2 0f 85
+0x00007ffac9086533:   6f ff ff ff 49 83 f9 ff 75 0e 45 88 54 1b ff 44
+0x00007ffac9086543:   8d 52 50 e9 5b ff ff ff 45 88 13 e8 ed ce fe ff
+0x00007ffac9086553:   bb 22 00 00 00 e9 3f ff ff ff cc cc cc cc cc cc
+0x00007ffac9086563:   cc cc cc 66 66 0f 1f 84 00 00 00 00 00 48 2b d1
+0x00007ffac9086573:   4d 85 c0 74 6a f7 c1 07 00 00 00 74 1d 0f b6 01
+0x00007ffac9086583:   3a 04 0a 75 5d 48 ff c1 49 ff c8 74 52 84 c0 74
+0x00007ffac9086593:   4e 48 f7 c1 07 00 00 00 75 e3 49 bb 80 80 80 80
+0x00007ffac90865a3:   80 80 80 80 49 ba ff fe fe fe fe fe fe fe 8d 04
+0x00007ffac90865b3:   0a 25 ff 0f 00 00 3d f8 0f 00 00 77 c0 48 8b 01
+0x00007ffac90865c3:   48 3b 04 0a 75 b7 48 83 c1 08 49 83 e8 08 76 0f
+0x00007ffac90865d3:   4d 8d 0c 02 48 f7 d0 49 23 c1 49 85 c3 74 cf 33
+0x00007ffac90865e3:   c0 c3 48 1b c0 48 83 c8 01 c3 cc cc cc cc cc cc
+0x00007ffac90865f3:   cc cc cc cc cc cc cc cc cc cc cc cc cc 33 c0 38
+0x00007ffac9086603:   01 74 0e 48 3b c2 74 09 48 ff c0 80 3c 08 00 75
+0x00007ffac9086613:   f2 c3 cc cc cc cc cc cc cc cc cc cc cc 48 83 ec
+0x00007ffac9086623:   28 83 3d 99 af 0c 00 00 75 36 48 85 c9 75 1a e8
+0x00007ffac9086633:   09 ce fe ff c7 00 16 00 00 00 e8 2e bd ff ff b8
+0x00007ffac9086643:   ff ff ff 7f 48 83 c4 28 c3 48 85 d2 74 e1 49 81
+0x00007ffac9086653:   f8 ff ff ff 7f 77 d8 48 83 c4 28 e9 0d ff ff ff
+0x00007ffac9086663:   45 33 c9 48 83 c4 28 e9 11 00 00 00 cc cc cc cc
+0x00007ffac9086673:   cc cc cc cc cc cc cc cc cc cc cc cc cc 48 89 5c
+0x00007ffac9086683:   24 08 48 89 6c 24 10 48 89 74 24 18 57 48 83 ec
+0x00007ffac9086693:   60 49 8b f8 48 8b f2 48 8b e9 4d 85 c0 75 07 33
+0x00007ffac90866a3:   c0 e9 c0 00 00 00 48 85 ed 75 1a e8 8d cd fe ff
+0x00007ffac90866b3:   c7 00 16 00 00 00 e8 b2 bc ff ff b8 ff ff ff 7f 
+
+
+
+---------------  P R O C E S S  ---------------
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Precious Log:
+<Not initialized>
+
+
+Dynamic libraries:
+0x00007ff60d260000 - 0x00007ff60d26e000 	D:\ECLIPSE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+0x00007ffacb9b0000 - 0x00007ffacbba8000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffac99e0000 - 0x00007ffac9a9d000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffac92e0000 - 0x00007ffac95d6000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffac9060000 - 0x00007ffac9160000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffab4530000 - 0x00007ffab4547000 	D:\ECLIPSE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\jli.dll
+0x00007ffacaaf0000 - 0x00007ffacac8f000 	C:\Windows\System32\USER32.dll
+0x00007ffac8420000 - 0x00007ffac86ba000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.4355_none_60b8b9eb71f62e16\COMCTL32.dll
+0x00007ffac9280000 - 0x00007ffac92a2000 	C:\Windows\System32\win32u.dll
+0x00007ffacb890000 - 0x00007ffacb92e000 	C:\Windows\System32\msvcrt.dll
+0x00007ffacaac0000 - 0x00007ffacaaeb000 	C:\Windows\System32\GDI32.dll
+0x00007ffac9160000 - 0x00007ffac9277000 	C:\Windows\System32\gdi32full.dll
+0x00007ffac9940000 - 0x00007ffac99dd000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffa8e6f0000 - 0x00007ffa8e70b000 	D:\ECLIPSE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\VCRUNTIME140.dll
+0x00007ffacb930000 - 0x00007ffacb962000 	C:\Windows\System32\IMM32.DLL
+0x00007ffa9b380000 - 0x00007ffa9b38c000 	D:\ECLIPSE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\vcruntime140_1.dll
+0x00007ffa83eb0000 - 0x00007ffa83f3d000 	D:\ECLIPSE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\msvcp140.dll
+0x00007ffa49790000 - 0x00007ffa4a3f2000 	D:\ECLIPSE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\server\jvm.dll
+0x00007ffaca0b0000 - 0x00007ffaca160000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffac9b00000 - 0x00007ffac9ba0000 	C:\Windows\System32\sechost.dll
+0x00007ffaca8d0000 - 0x00007ffaca9f3000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffac92b0000 - 0x00007ffac92d7000 	C:\Windows\System32\bcrypt.dll
+0x00007ffa8e680000 - 0x00007ffa8e689000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffacacf0000 - 0x00007ffacad5b000 	C:\Windows\System32\WS2_32.dll
+0x00007ffac8c50000 - 0x00007ffac8c9b000 	C:\Windows\SYSTEM32\POWRPROF.dll
+0x00007ffabde40000 - 0x00007ffabde67000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffac0080000 - 0x00007ffac008a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffac87b0000 - 0x00007ffac87c2000 	C:\Windows\SYSTEM32\UMPDC.dll
+0x00007ffac67b0000 - 0x00007ffac67c2000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ffa8e670000 - 0x00007ffa8e67a000 	D:\ECLIPSE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\jimage.dll
+0x00007ffac8a60000 - 0x00007ffac8c44000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffac89a0000 - 0x00007ffac89d4000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffac95e0000 - 0x00007ffac9662000 	C:\Windows\System32\bcryptPrimitives.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;D:\ECLIPSE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.4355_none_60b8b9eb71f62e16;D:\ECLIPSE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\server
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages 
+java_command: <unknown>
+java_class_path (initial): C:\Users\KUYA JM\icemocha2.0\BACKENDNIJIMBO\backend\target\classes;C:\Users\KUYA JM\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.0\spring-boot-starter-data-jpa-3.2.0.jar;C:\Users\KUYA JM\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.0\spring-boot-starter-aop-3.2.0.jar;C:\Users\KUYA JM\.m2\repository\org\aspectj\aspectjweaver\1.9.20.1\aspectjweaver-1.9.20.1.jar;C:\Users\KUYA JM\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.0\spring-boot-starter-jdbc-3.2.0.jar;C:\Users\KUYA JM\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\KUYA JM\.m2\repository\org\springframework\spring-jdbc\6.1.1\spring-jdbc-6.1.1.jar;C:\Users\KUYA JM\.m2\repository\org\hibernate\orm\hibernate-core\6.3.1.Final\hibernate-core-6.3.1.Final.jar;C:\Users\KUYA JM\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\KUYA JM\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\KUYA JM\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\KUYA JM\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\KUYA JM\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\KUYA JM\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\KUYA JM\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\KUYA JM\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\KUYA JM\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\KUYA JM\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\KUYA JM\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\KUYA JM\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\is
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=D:/ECLIPSE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143/jre/bin/server;D:/ECLIPSE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\KUYA JM\AppData\Local\Microsoft\WindowsApps;C:\Users\KUYA JM\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\KUYA JM\AppData\Roaming\npm;D:\ECLIPSE;
+USERNAME=KUYA JM
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+TMP=C:\Users\KUYAJM~1\AppData\Local\Temp
+TEMP=C:\Users\KUYAJM~1\AppData\Local\Temp
+
+
+
+Periodic native trim disabled
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+OS uptime: 0 days 3:56 hours
+
+CPU: total 8 (initial active 0) 
+Processor Information for all 8 processors :
+  Max Mhz: 3600, Current Mhz: 3600, Mhz Limit: 3600
+
+Memory: 4k page, system-wide physical 16296M (6522M free)
+TotalPageFile size 21928M (AvailPageFile size 7289M)
+current process WorkingSet (physical memory assigned to process): 8M, peak: 8M
+current process commit charge ("private bytes"): 3M, peak: 3M
+
+vm_info: OpenJDK 64-Bit Server VM (17.0.10+7) for windows-amd64 JRE (17.0.10+7), built on Jan 16 2024 23:25:11 by "admin" with MS VC++ 16.10 / 16.11 (VS2019)
+
+END.
